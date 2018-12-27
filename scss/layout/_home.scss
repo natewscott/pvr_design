@@ -1,0 +1,17 @@
+#home {
+    article {
+        max-width: 1080px;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+    div {
+        @include display-flex;
+        @include flex-direction(column);
+        @include align-items(center);
+
+        img {
+            max-width: 350px;
+        }
+    }
+}

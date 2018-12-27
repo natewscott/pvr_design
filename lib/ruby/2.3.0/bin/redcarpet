@@ -19,5 +19,4 @@ if ARGV.first
   end
 end
 
-gem 'redcarpet', version
 load Gem.bin_path('redcarpet', 'redcarpet', version)

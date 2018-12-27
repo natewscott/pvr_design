@@ -17,31 +17,23 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!-- Add your site or application content here -->
-        <div class="page-wrap">
-            include "header.html"
+        <div class="page-wrap" id="home">
+            <!-- include "header.html" -->
             <section class="main-content">
-                include "news.html"
+                <article>
+                    <div>
+                        <img src="img/misc/pvr-logo.png" alt="">
+                        <h1>Website Coming soon.</h1>
+                    </div>
+                </article>
             </section>
-            
         </div>
         <footer>
-            include "footer-cards.html"
             include "footer.html"
         </footer>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script>document.write('<script src="http://' + (location.host || 'localhost')
-        .split(':')[0] + ':1337/livereload.js?snipver=1"></' + 'script>')</script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>
