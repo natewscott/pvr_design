@@ -1,0 +1,40 @@
+{
+  "name": "holy-grail",
+  "version": "0.0.0",
+  "description": "template site: susy/flexbox and design patterns",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "glob": "*",
+    "grunt": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-sass": "*",
+    "load-grunt-tasks": "*",
+    "grunt-contrib-watch": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-includes": "*",
+    "bower": "*",
+    "grunt-bower-task": "*",
+    "grunt-shell": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-postcss": "~0.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}
