@@ -1,0 +1,173 @@
+.header-image{
+    position:relative;
+    background:url('../img/hero/crater_lake.jpg');
+    background-size:cover;
+    background-position: center;
+    min-height:100vh;
+    padding-bottom:100px;
+    overflow:hidden;
+}
+.header-image:after{
+    content:'';
+    position:absolute;
+}
+/* NAV-BAR */
+
+.menu-list {
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.nav-bar {
+  position: fixed;
+  min-width: 100%;
+  z-index: 999;
+}
+
+.fade-background {  
+   background-color: rgba($park-white,.85);
+  webkit-box-shadow: 0 7px 5px -5px rgba(93, 93, 93, 0.85);
+    -moz-box-shadow: 0 7px 5px -5px rgba(93, 93, 93, 0.85);
+    box-shadow: 0 7px 5px -5px rgba(93, 93, 93, 0.85);
+   -webkit-transition: background-color 1.5s;
+    transition: background-color 1.5s;
+  -webkit-transition: box-shadow 1.5s;
+    transition: box-shadow 1.5s;
+}
+
+.fade-transparent {
+   background-color: transparent;
+   -webkit-transition: background-color 1s;
+   transition: background-color 1s;
+}
+
+.text-fade-in {
+  color: $park-burnt;
+  -webkit-transition: color 1.5s;
+  transition: color 1.5s;
+}
+
+.text-top {
+  color: $park-white;
+    &:hover {
+      color: $park-blue;
+    }
+}
+
+.logo {
+  background-color: rgba(255,255,255,0);
+  text-align: center;
+  padding: 5px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  display: inline-block;
+  height: auto;
+  // margin: 1em 0;
+  width: 65px;
+}
+
+ .menu-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 50%;
+}
+
+.nav-link {
+  letter-spacing: 0.3em;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+.text-fade-in:hover {
+  color: $park-blue;
+}
+nav li {
+  display: inline-block;
+}
+nav #menu-toggle {
+  display: none;
+}
+nav .label-toggle {
+  display: none;
+}
+nav .wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu-toggle {
+  display: none;
+}
+  
+.label-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .menu-list {
+    background-color: rgba($park-white,.85);
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    padding: 0;
+    text-align: center;
+    transition: all 1s ease;
+    visibility: hidden;
+  }
+  
+  .menu-list li {
+    border-bottom: 2px solid #000;
+    color: #000;
+    display: block;
+    max-width: 100%;
+    font-size: 1.2em;
+    padding: 1em 0;
+
+   
+}
+  
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    padding-bottom: 10%;
+  }
+  
+  nav .label-toggle {
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 35px;
+    margin-top: 1em;
+    width: 35px;
+  }
+  
+  .hamburger-top {
+    background: linear-gradient(to bottom, #fff 0%, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%, #fff 100%);
+  }
+  
+  .hamburger-scroll {
+    background: linear-gradient(to bottom, #000 0%, #000 20%, transparent 20%, transparent 40%, #000 40%, #000 60%, transparent 60%, transparent 80%, #000 80%, #000 100%);
+  }
+  
+  nav .wrapper {
+    display: block;
+  }
+  
+  
+}
+

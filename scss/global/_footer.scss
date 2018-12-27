@@ -1,0 +1,49 @@
+/**
+ * the sticky footer mixin
+ **/
+@mixin sticky-footer($footer-height, $wrapper-selector: unquote(".page-wrap"), $container-selector: unquote(".main-content"), $footer-selector: unquote(".site-footer")) {
+  html, body {
+    height: 100%;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  #{$wrapper-selector} {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -$footer-height;
+    #{$container-selector} {
+      padding: 0 0 $footer-height 0;
+    } 
+  }
+  #{$footer-selector} {
+    height: $footer-height; 
+  }
+}
+
+/**
+ * the sticky footer implementation
+ **/
+@include sticky-footer(50px);
+
+footer {
+  @include full;
+  // background: $primary-brown;
+  color: white;
+  font-size: 12px;
+
+  .site-footer {
+    width:80%;
+    margin: 0 auto;
+  }
+
+  .footer-link {
+
+    @include breakpoint($medium) {
+      @include span(3 of $nav_layout);
+      display: inline-block;
+    }
+}
+}

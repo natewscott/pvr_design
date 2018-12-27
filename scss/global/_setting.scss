@@ -1,0 +1,31 @@
+body, html {
+  font: normal 18px/1.5 $body-copy;
+  // font-size: 18px;
+  height: 100%;
+}
+
+.page-wrap {
+  @include full;
+}
+
+.main-content {
+  @include full;
+}
+
+ img {
+  width: 100%;
+  height: auto;
+ }
+ ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ }
+   a {
+    text-decoration: none;
+    display: block;
+  }
+
+
+
+
